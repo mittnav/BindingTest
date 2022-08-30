@@ -28,97 +28,108 @@
         private void InitializeComponent()
         {
             this.grid = new System.Windows.Forms.DataGridView();
+            this.lblModel = new System.Windows.Forms.Label();
             this.txtModel = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblList = new System.Windows.Forms.Label();
             this.lstPassengers = new System.Windows.Forms.ListBox();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
             // grid
             // 
-            this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid.Location = new System.Drawing.Point(12, 12);
+            this.grid.Location = new System.Drawing.Point(14, 14);
+            this.grid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(343, 136);
-            this.grid.TabIndex = 0;
+            this.grid.Size = new System.Drawing.Size(400, 157);
+            this.grid.TabIndex = 1;
+            // 
+            // lblModel
+            // 
+            this.lblModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblModel.AutoSize = true;
+            this.lblModel.Location = new System.Drawing.Point(10, 181);
+            this.lblModel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(44, 15);
+            this.lblModel.TabIndex = 0;
+            this.lblModel.Text = "Model:";
             // 
             // txtModel
             // 
-            this.txtModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtModel.Location = new System.Drawing.Point(54, 154);
+            this.txtModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtModel.Location = new System.Drawing.Point(63, 178);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(301, 20);
-            this.txtModel.TabIndex = 1;
+            this.txtModel.Size = new System.Drawing.Size(350, 23);
+            this.txtModel.TabIndex = 0;
+            this.txtModel.TabStop = false;
             this.txtModel.Text = "txtModel";
             // 
-            // label1
+            // lblList
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(9, 157);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Model:";
+            this.lblList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblList.AutoSize = true;
+            this.lblList.Location = new System.Drawing.Point(421, 14);
+            this.lblList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblList.Name = "lblList";
+            this.lblList.Size = new System.Drawing.Size(163, 15);
+            this.lblList.TabIndex = 0;
+            this.lblList.Text = "Passengers on selected plane:";
             // 
-            // label2
+            // lstPassengers
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(361, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Name:";
+            this.lstPassengers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstPassengers.FormattingEnabled = true;
+            this.lstPassengers.ItemHeight = 15;
+            this.lstPassengers.Location = new System.Drawing.Point(425, 32);
+            this.lstPassengers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.lstPassengers.Name = "lstPassengers";
+            this.lstPassengers.Size = new System.Drawing.Size(173, 139);
+            this.lstPassengers.TabIndex = 2;
+            // 
+            // lblName
+            // 
+            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(421, 181);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(42, 15);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name:";
             // 
             // txtName
             // 
             this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(405, 154);
+            this.txtName.Location = new System.Drawing.Point(472, 178);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(108, 20);
-            this.txtName.TabIndex = 4;
+            this.txtName.Size = new System.Drawing.Size(125, 23);
+            this.txtName.TabIndex = 0;
+            this.txtName.TabStop = false;
             this.txtName.Text = "txtName";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(361, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Passengers on selected plane:";
-            // 
-            // lstPassengers
-            // 
-            this.lstPassengers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstPassengers.FormattingEnabled = true;
-            this.lstPassengers.Location = new System.Drawing.Point(364, 28);
-            this.lstPassengers.Name = "lstPassengers";
-            this.lstPassengers.Size = new System.Drawing.Size(149, 121);
-            this.lstPassengers.TabIndex = 5;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(519, 182);
-            this.Controls.Add(this.lstPassengers);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtModel);
+            this.ClientSize = new System.Drawing.Size(606, 210);
             this.Controls.Add(this.grid);
+            this.Controls.Add(this.lblModel);
+            this.Controls.Add(this.txtModel);
+            this.Controls.Add(this.lblList);
+            this.Controls.Add(this.lstPassengers);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtName);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -131,12 +142,12 @@
         #endregion
 
         private System.Windows.Forms.DataGridView grid;
+        private System.Windows.Forms.Label lblModel;
         private System.Windows.Forms.TextBox txtModel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblList;
         private System.Windows.Forms.ListBox lstPassengers;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
 

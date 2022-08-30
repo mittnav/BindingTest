@@ -27,180 +27,191 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.lstPassengers = new System.Windows.Forms.ListBox();
-            this.txtName = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtModel = new System.Windows.Forms.TextBox();
+            this.lblGrid = new System.Windows.Forms.Label();
             this.grid = new System.Windows.Forms.DataGridView();
+            this.lblAirplaneFilter = new System.Windows.Forms.Label();
             this.txtAirplaneFilter = new System.Windows.Forms.TextBox();
+            this.lblModel = new System.Windows.Forms.Label();
+            this.txtModel = new System.Windows.Forms.TextBox();
+            this.lblList = new System.Windows.Forms.Label();
+            this.lstPassengers = new System.Windows.Forms.ListBox();
+            this.lblPassengerFilter = new System.Windows.Forms.Label();
             this.txtPassengerFilter = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grid)).BeginInit();
             this.SuspendLayout();
             // 
-            // label2
+            // lblGrid
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(366, 192);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 13);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Name:";
-            // 
-            // lstPassengers
-            // 
-            this.lstPassengers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.lstPassengers.FormattingEnabled = true;
-            this.lstPassengers.Location = new System.Drawing.Point(369, 49);
-            this.lstPassengers.Name = "lstPassengers";
-            this.lstPassengers.Size = new System.Drawing.Size(146, 134);
-            this.lstPassengers.TabIndex = 19;
-            // 
-            // txtName
-            // 
-            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtName.Location = new System.Drawing.Point(407, 189);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(108, 20);
-            this.txtName.TabIndex = 18;
-            this.txtName.Text = "txtName";
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(53, 13);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Airplanes:";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(366, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(152, 13);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Passengers on selected plane:";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 192);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Model:";
-            // 
-            // txtModel
-            // 
-            this.txtModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtModel.Location = new System.Drawing.Point(57, 189);
-            this.txtModel.Name = "txtModel";
-            this.txtModel.Size = new System.Drawing.Size(303, 20);
-            this.txtModel.TabIndex = 14;
-            this.txtModel.Text = "txtModel";
+            this.lblGrid.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblGrid.AutoSize = true;
+            this.lblGrid.Location = new System.Drawing.Point(18, 14);
+            this.lblGrid.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGrid.Name = "lblGrid";
+            this.lblGrid.Size = new System.Drawing.Size(59, 15);
+            this.lblGrid.TabIndex = 0;
+            this.lblGrid.Text = "Airplanes:";
             // 
             // grid
             // 
             this.grid.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.grid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grid.Location = new System.Drawing.Point(15, 35);
+            this.grid.Location = new System.Drawing.Point(18, 40);
+            this.grid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.grid.Name = "grid";
-            this.grid.Size = new System.Drawing.Size(345, 148);
-            this.grid.TabIndex = 13;
+            this.grid.Size = new System.Drawing.Size(402, 171);
+            this.grid.TabIndex = 3;
+            // 
+            // lblAirplaneFilter
+            // 
+            this.lblAirplaneFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAirplaneFilter.AutoSize = true;
+            this.lblAirplaneFilter.Location = new System.Drawing.Point(229, 14);
+            this.lblAirplaneFilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAirplaneFilter.Name = "lblAirplaneFilter";
+            this.lblAirplaneFilter.Size = new System.Drawing.Size(36, 15);
+            this.lblAirplaneFilter.TabIndex = 0;
+            this.lblAirplaneFilter.Text = "Filter:";
             // 
             // txtAirplaneFilter
             // 
             this.txtAirplaneFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtAirplaneFilter.Location = new System.Drawing.Point(234, 9);
+            this.txtAirplaneFilter.Location = new System.Drawing.Point(273, 10);
+            this.txtAirplaneFilter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtAirplaneFilter.Name = "txtAirplaneFilter";
-            this.txtAirplaneFilter.Size = new System.Drawing.Size(126, 20);
-            this.txtAirplaneFilter.TabIndex = 21;
+            this.txtAirplaneFilter.Size = new System.Drawing.Size(146, 23);
+            this.txtAirplaneFilter.TabIndex = 1;
             this.txtAirplaneFilter.TextChanged += new System.EventHandler(this.txtAirplaneFilter_TextChanged);
+            // 
+            // lblModel
+            // 
+            this.lblModel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblModel.AutoSize = true;
+            this.lblModel.Location = new System.Drawing.Point(14, 222);
+            this.lblModel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblModel.Name = "lblModel";
+            this.lblModel.Size = new System.Drawing.Size(44, 15);
+            this.lblModel.TabIndex = 0;
+            this.lblModel.Text = "Model:";
+            // 
+            // txtModel
+            // 
+            this.txtModel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtModel.Location = new System.Drawing.Point(66, 218);
+            this.txtModel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtModel.Name = "txtModel";
+            this.txtModel.Size = new System.Drawing.Size(353, 23);
+            this.txtModel.TabIndex = 5;
+            this.txtModel.Text = "txtModel";
+            // 
+            // lblList
+            // 
+            this.lblList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblList.AutoSize = true;
+            this.lblList.Location = new System.Drawing.Point(427, 10);
+            this.lblList.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblList.Name = "lblList";
+            this.lblList.Size = new System.Drawing.Size(163, 15);
+            this.lblList.TabIndex = 0;
+            this.lblList.Text = "Passengers on selected plane:";
+            // 
+            // lstPassengers
+            // 
+            this.lstPassengers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstPassengers.FormattingEnabled = true;
+            this.lstPassengers.ItemHeight = 15;
+            this.lstPassengers.Location = new System.Drawing.Point(430, 57);
+            this.lstPassengers.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.lstPassengers.Name = "lstPassengers";
+            this.lstPassengers.Size = new System.Drawing.Size(170, 154);
+            this.lstPassengers.TabIndex = 4;
+            // 
+            // lblPassengerFilter
+            // 
+            this.lblPassengerFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPassengerFilter.AutoSize = true;
+            this.lblPassengerFilter.Location = new System.Drawing.Point(427, 32);
+            this.lblPassengerFilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPassengerFilter.Name = "lblPassengerFilter";
+            this.lblPassengerFilter.Size = new System.Drawing.Size(36, 15);
+            this.lblPassengerFilter.TabIndex = 0;
+            this.lblPassengerFilter.Text = "Filter:";
             // 
             // txtPassengerFilter
             // 
             this.txtPassengerFilter.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtPassengerFilter.Location = new System.Drawing.Point(404, 25);
+            this.txtPassengerFilter.Location = new System.Drawing.Point(471, 29);
+            this.txtPassengerFilter.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txtPassengerFilter.Name = "txtPassengerFilter";
-            this.txtPassengerFilter.Size = new System.Drawing.Size(111, 20);
-            this.txtPassengerFilter.TabIndex = 21;
+            this.txtPassengerFilter.Size = new System.Drawing.Size(129, 23);
+            this.txtPassengerFilter.TabIndex = 2;
             this.txtPassengerFilter.TextChanged += new System.EventHandler(this.txtPassengerFilter_TextChanged);
             // 
-            // label5
+            // lblName
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(196, 12);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(32, 13);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Filter:";
+            this.lblName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblName.AutoSize = true;
+            this.lblName.Location = new System.Drawing.Point(427, 222);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(42, 15);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "Name:";
             // 
-            // label6
+            // txtName
             // 
-            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(366, 28);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Filter:";
+            this.txtName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtName.Location = new System.Drawing.Point(475, 218);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(125, 23);
+            this.txtName.TabIndex = 6;
+            this.txtName.Text = "txtName";
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 214);
-            this.Controls.Add(this.txtPassengerFilter);
-            this.Controls.Add(this.txtAirplaneFilter);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.lstPassengers);
-            this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtModel);
+            this.ClientSize = new System.Drawing.Size(615, 247);
+            this.Controls.Add(this.lblGrid);
             this.Controls.Add(this.grid);
+            this.Controls.Add(this.lblAirplaneFilter);
+            this.Controls.Add(this.txtPassengerFilter);
+            this.Controls.Add(this.lblModel);
+            this.Controls.Add(this.txtModel);
+            this.Controls.Add(this.lblList);
+            this.Controls.Add(this.lstPassengers);
+            this.Controls.Add(this.lblPassengerFilter);
+            this.Controls.Add(this.txtAirplaneFilter);
+            this.Controls.Add(this.lblName);
+            this.Controls.Add(this.txtName);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox lstPassengers;
-        private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtModel;
+        private System.Windows.Forms.Label lblGrid;
         private System.Windows.Forms.DataGridView grid;
+        private System.Windows.Forms.Label lblAirplaneFilter;
         private System.Windows.Forms.TextBox txtAirplaneFilter;
+        private System.Windows.Forms.Label lblModel;
+        private System.Windows.Forms.TextBox txtModel;
+        private System.Windows.Forms.Label lblList;
+        private System.Windows.Forms.ListBox lstPassengers;
+        private System.Windows.Forms.Label lblPassengerFilter;
         private System.Windows.Forms.TextBox txtPassengerFilter;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-
-
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.TextBox txtName;
     }
 }
